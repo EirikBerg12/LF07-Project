@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRG-Racing | Kontakt</title>
+    <link rel="stylesheet" href="../styles/style-main.css">
+    <!-- Google Fonts: Inter (Text) & Unbounded (Überschriften) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <a href="../index.html" class="logo">BRG<span>-Racing</span></a>
+
+        <!-- Checkbox steuert das mobile Menü (kein JavaScript) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <a href="../index.html">Start</a>
+            <a href="racecars.html">Rennwagen</a>
+            <a href="simracing.html">Simracing</a>
+            <a href="kontakt.html" class="aktiv">Kontakt</a>
+        </nav>
+    </header>
+
+
+    <!-- ===== HAUPTINHALT ===== -->
+    <main>
+
+        <!-- Kopfbereich der Seite -->
+        <section class="seiten-kopf">
+            <div class="wrapper">
+                <p class="hero-label">Kontakt</p>
+                <h1>Schreiben Sie <span>uns</span></h1>
+                <p>
+                    Fragen zu einem Fahrzeug oder zur Ausstattung? Wir beraten Sie
+                    gern persönlich — telefonisch, per Mail oder über das Formular.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Kontaktbereich: Info-Spalte + Formular -->
+        <section class="kontakt">
+            <div class="wrapper">
+                <div class="kontakt-grid">
+
+                    <!-- Linke Spalte: Kontaktdaten -->
+                    <div class="kontakt-info">
+                        <h2>So erreichen Sie uns</h2>
+
+                        <div class="kontakt-eintrag">
+                            <strong>Adresse</strong>
+                            <p>BRG-Racing GmbH<br>Boxengasse 7<br>24103 Kiel</p>
+                        </div>
+
+                        <div class="kontakt-eintrag">
+                            <strong>Telefon</strong>
+                            <p><a href="tel:+4943112345678">+49 431 123 456 78</a></p>
+                        </div>
+
+                        <div class="kontakt-eintrag">
+                            <strong>E-Mail</strong>
+                            <p><a href="mailto:info@brg-racing.de">info@brg-racing.de</a></p>
+                        </div>
+
+                        <div class="kontakt-eintrag">
+                            <strong>Öffnungszeiten</strong>
+                            <p>Mo–Fr: 9:00–18:00 Uhr<br>Sa: 10:00–14:00 Uhr</p>
+                        </div>
+                    </div>
+
+                    <!-- Rechte Spalte: Formular verschickt per mailto (kein JavaScript) -->
+                    <div class="kontakt-formular">
+                        <h2>Nachricht senden</h2>
+
+                        <!--
+                            Das Formular öffnet das E-Mail-Programm des Besuchers.
+                            enctype="text/plain" sorgt für eine lesbare Mail.
+                        -->
+                        <form action="mailto:info@brg-racing.de" method="post" enctype="text/plain">
+
+                            <div class="formular-feld">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="Name" placeholder="Ihr Name" required>
+                            </div>
+
+                            <div class="formular-feld">
+                                <label for="email">E-Mail</label>
+                                <input type="email" id="email" name="E-Mail" placeholder="ihre@mail.de" required>
+                            </div>
+
+                            <div class="formular-feld">
+                                <label for="thema">Thema</label>
+                                <select id="thema" name="Thema">
+                                    <option>Allgemeine Anfrage</option>
+                                    <option>Rennwagen</option>
+                                    <option>Simracing</option>
+                                    <option>Bestellung</option>
+                                    <option>Sonstiges</option>
+                                </select>
+                            </div>
+
+                            <div class="formular-feld">
+                                <label for="nachricht">Nachricht</label>
+                                <textarea id="nachricht" name="Nachricht" placeholder="Ihre Nachricht an uns …" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn">Nachricht abschicken</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
+        <div class="footer-grid wrapper">
+
+            <div class="footer-brand">
+                <p class="logo-text">BRG<span>-Racing</span></p>
+                <p class="footer-desc">Motorsport &amp; Simracing.</p>
+            </div>
+
+            <nav class="footer-nav">
+                <strong>Shop</strong>
+                <a href="racecars.html">Rennwagen</a>
+                <a href="simracing.html">Simracing</a>
+            </nav>
+
+            <nav class="footer-nav">
+                <strong>Kontakt</strong>
+                <a href="kontakt.html">Kontaktformular</a>
+                <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
+            </nav>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
