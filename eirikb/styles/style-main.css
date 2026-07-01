@@ -296,6 +296,13 @@ header nav a.aktiv {
     height: 190px;
 }
 
+.kat-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .kat-bild.rennwagen {
     background: linear-gradient(135deg, #7a0000 0%, #2a1010 100%);
 }
@@ -359,9 +366,17 @@ header nav a.aktiv {
 
 
 .produkt-bild {
+    padding: 5px;
     height: 170px;
     /* Anker für das Hersteller-Logo (oben rechts) */
     position: relative;
+}
+
+.produkt-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Einheitlicher Platz für das Hersteller-Logo auf jeder Produktkarte */
@@ -374,10 +389,19 @@ header nav a.aktiv {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 8px;
-    background-color: #fff;
+    padding: 4px 6px;
+    background-color: #41414117;
+    backdrop-filter: blur(12px);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    /* Standard: Logo ist immer sichtbar */
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+/* Beim Hover über die Karte wird das Logo ausgeblendet */
+.produkt-karte:hover .produkt-marke {
+    opacity: 0;
 }
 
 /* Logo skaliert sauber in den Rahmen, egal welches Format */
@@ -388,15 +412,6 @@ header nav a.aktiv {
     display: block;
 }
 
-/* Farb-Platzhalter für Produktbilder — werden später durch <img> ersetzt */
-.produkt-bild.rot     { background: linear-gradient(135deg, #7a0000 0%, #2a1010 100%); }
-.produkt-bild.blau    { background: linear-gradient(135deg, #0d3460 0%, #0d1428 100%); }
-.produkt-bild.gruen   { background: linear-gradient(135deg, #0b4d2e 0%, #0d281a 100%); }
-.produkt-bild.gelb    { background: linear-gradient(135deg, #6b5e00 0%, #2a2410 100%); }
-.produkt-bild.lila    { background: linear-gradient(135deg, #3d1a5c 0%, #180d28 100%); }
-.produkt-bild.orange  { background: linear-gradient(135deg, #7a3a00 0%, #2a1a10 100%); }
-.produkt-bild.tuerkis { background: linear-gradient(135deg, #0d5c5c 0%, #0d2828 100%); }
-.produkt-bild.grau    { background: linear-gradient(135deg, #3a4650 0%, #141c22 100%); }
 
 .produkt-info {
     padding: 1.2rem 1.4rem 1.5rem;
