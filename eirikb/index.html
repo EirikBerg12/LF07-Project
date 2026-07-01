@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRG-Racing | Racecars & Simracing</title>
+    <link rel="stylesheet" href="./styles/style-main.css">
+    <!-- Google Fonts: Inter (Text) & Unbounded (Überschriften) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <a href="index.html" class="logo">BRG<span>-Racing</span></a>
+
+        <!-- Checkbox steuert das mobile Menü (kein JavaScript) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <a href="index.html" class="aktiv">Start</a>
+            <a href="./html/racecars.html">Rennwagen</a>
+            <a href="./html/simracing.html">Simracing</a>
+            <a href="./html/kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+
+    <!-- ===== HAUPTINHALT ===== -->
+    <main>
+
+        <!-- Hero-Bereich: Einstieg und Hauptaussage -->
+        <section class="hero">
+            <div class="wrapper">
+                <p class="hero-label">Motorsport & Simracing</p>
+                <h1>Dein Fahrgefühl.<br><span>Auf der Strecke und daheim.</span></h1>
+                <p class="hero-text">
+                    Hochwertige Rennwagen und professionelles Simracing-Equipment —
+                    für alle, die Motorsport wirklich leben.
+                </p>
+                <div class="hero-ctas">
+                    <a href="./html/racecars.html" class="btn">Rennwagen entdecken</a>
+                    <a href="./html/simracing.html" class="btn btn-ghost">Simracing Shop</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Kategorie-Übersicht: 2-spaltiges Grid -->
+        <section class="kategorien">
+            <div class="wrapper">
+                <h2>Unsere Kategorien</h2>
+                <div class="kat-grid">
+
+                    <a href="./html/racecars.html" class="kat-karte">
+                        <!-- Platzhalter — wird später durch echtes Bild ersetzt -->
+                        <div class="kat-bild rennwagen"></div>
+                        <div class="kat-info">
+                            <h3>Rennwagen</h3>
+                            <p>Kart bis GT3 — gebraucht und neu</p>
+                            <span class="pfeil">Alle Fahrzeuge &rarr;</span>
+                        </div>
+                    </a>
+
+                    <a href="./html/simracing.html" class="kat-karte">
+                        <div class="kat-bild simracing"></div>
+                        <div class="kat-info">
+                            <h3>Simracing</h3>
+                            <p>Lenkräder, Pedale, Cockpits und mehr</p>
+                            <span class="pfeil">Zum Shop &rarr;</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Produkt-Highlights: 3-spaltiges Grid -->
+        <section class="highlights">
+            <div class="wrapper">
+                <h2>Highlights</h2>
+                <div class="produkt-grid">
+
+                    <!-- Produkt 1 -->
+                    <article class="produkt-karte">
+                        <div class="produkt-bild rot"></div>
+                        <div class="produkt-info">
+                            <span class="tag">Rennwagen</span>
+                            <h3>Tony Kart Racer 401 R</h3>
+                            <p>KF2-Kart, 50 ccm, komplett überholt, sofort rennbereit.</p>
+                            <div class="produkt-fuss">
+                                <strong class="preis">4.800 €</strong>
+                                <a href="./html/bestellen.html" class="btn btn-sm">Bestellen</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produkt 2 -->
+                    <article class="produkt-karte">
+                        <div class="produkt-bild blau"></div>
+                        <div class="produkt-info">
+                            <span class="tag">Simracing</span>
+                            <h3>Fanatec CSL DD</h3>
+                            <p>8 Nm Direct Drive, Quick-Release, kompatibel mit PC & Xbox.</p>
+                            <div class="produkt-fuss">
+                                <strong class="preis">399 €</strong>
+                                <a href="./html/bestellen.html" class="btn btn-sm">Bestellen</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produkt 3 -->
+                    <article class="produkt-karte">
+                        <div class="produkt-bild gruen"></div>
+                        <div class="produkt-info">
+                            <span class="tag">Simracing</span>
+                            <h3>Playseat Trophy</h3>
+                            <p>Aluminium-Cockpit, verstellbar, für alle Körpergrößen, bis 130 kg.</p>
+                            <div class="produkt-fuss">
+                                <strong class="preis">549 €</strong>
+                                <a href="./html/bestellen.html" class="btn btn-sm">Bestellen</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
+        <div class="footer-grid wrapper">
+
+            <div class="footer-brand">
+                <p class="logo-text">BRG<span>-Racing</span></p>
+                <p class="footer-desc">Motorsport & Simracing.</p>
+            </div>
+
+            <nav class="footer-nav">
+                <strong>Shop</strong>
+                <a href="./html/racecars.html">Rennwagen</a>
+                <a href="./html/simracing.html">Simracing</a>
+            </nav>
+
+            <nav class="footer-nav">
+                <strong>Kontakt</strong>
+                <a href="./html/kontakt.html">Kontaktformular</a>
+                <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
+            </nav>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
