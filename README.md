@@ -1,5 +1,10 @@
 # LF07-Project
 2026-LF07-Project Webshop 
+
+Projekt von Eirik Bergner zur Erstellung eines Webshops.
+
+Auftragsgeber: Herr Frenzel,RBZ-Wirtschaft Kiel.
+
 Ausgangssituation 
 Ein Freund von ihnen kommt mit einer Geschäftsidee zu Ihnen. Er möchte eine
 bestimmte Art von Produkten (WELCHE KÖNNEN SIE ENTSCHEIDEN) über das
