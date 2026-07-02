@@ -1,468 +1,393 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BRG-Racing | Simracing</title>
-    <link rel="stylesheet" href="../styles/style-main.css" />
-    <link rel="stylesheet" href="../styles/style-simracing.css" />
-    <!-- Google Fonts: Inter (Text) & Unbounded (Überschriften) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- ===== HEADER ===== -->
-    <header>
-      <a href="../index.html" class="logo">BRG<span>-Racing</span></a>
 
-      <!-- Checkbox steuert das mobile Menü -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRG-Racing | Simracing</title>
+  <link rel="stylesheet" href="../styles/style-main.css" />
+  <link rel="stylesheet" href="../styles/style-simracing.css" />
+  <!-- Google Fonts: Inter (Text) & Unbounded (Überschriften) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <nav>
-        <a href="../index.html">Start</a>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <a href="../index.html" class="logo">BRG<span>-Racing</span></a>
+
+    <!-- Checkbox steuert das mobile Menü -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav>
+      <a href="../index.html">Start</a>
+      <a href="racecars.html">Rennwagen</a>
+      <a href="simracing.html" class="aktiv">Simracing</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- ===== HAUPTINHALT ===== -->
+  <main>
+    <!-- Kopfbereich der Kategorie -->
+    <section class="seiten-kopf">
+      <div class="wrapper">
+        <p class="hero-label">Kategorie</p>
+        <h1>Simracing <span>Equipment</span></h1>
+        <p>
+          Direct-Drive-Lenkräder, Loadcell-Pedale und Zubehör - Egal ob
+          Einsteiger oder Profi, wir haben das passende Simracing-Equipment
+          für dich.
+        </p>
+
+        <!-- Unterkategorien als Sprungmarken -->
+        <nav class="sub-nav">
+          <a href="#wheelbase">Wheelbasen</a>
+          <a href="#lenkrad">Lenkräder</a>
+          <a href="#pedale">Pedale</a>
+          <a href="#zubehoer">Zubehör</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Produktliste, nach Unterkategorien gegliedert -->
+    <section class="produkt-liste">
+      <div class="wrapper">
+        <!-- ===== Unterkategorie: Wheelbase ===== -->
+        <div class="unterkategorie" id="wheelbase">
+          <h2 class="kat-titel">Wheelbasen<span>.</span></h2>
+          <div class="produkt-grid">
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/Alpha-mini.png" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/Simmagic_Red_White_logo.avif" alt="MOZA" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Wheelbase</span>
+                <h3>Simagic Alpha Mini</h3>
+                <p>
+                  10 Nm Einsteiger Direct Drive, Quick-Release, kompatibel mit
+                  PC &amp; Xbox.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">399 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Fanatec%20CSL%20DD&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Fanatec%20CSL%20DD%20(399%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/R12.png" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/MOZA_Racing_White.svg" alt="MOZA" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Wheelbase</span>
+                <h3>MOZA R12 V2</h3>
+                <p>
+                  12 Nm Direct-Drive-Base, kompakt und leise Preis
+                  Leistungs-Sieger.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">412 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20MOZA%20R9%20V2&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20MOZA%20R9%20V2%20(439%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/SC3PRO-LINK-1.webp" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/Simucube-logo-1.png" alt="Simucube" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Simracing</span>
+                <h3>Simucube 3 Pro</h3>
+                <p>
+                  25 Nm Direct Drive, Link Quick Release <br />
+                  Die beste Wahl für Pros und alle die keine Kompromisse
+                  wollen.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">1570,80 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Simucube%202%20Pro&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Simucube%202%20Pro%20(1.199%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ===== Unterkategorie: Lenkrad ===== -->
+        <div class="unterkategorie" id="lenkrad">
+          <h2 class="kat-titel">Lenkräder<span>.</span></h2>
+          <div class="produkt-grid">
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/moza-ks-pro-gt-wheel-main.png" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/MOZA_Racing_White.svg" alt="MOZA" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Lenkrad</span>
+                <h3>MOZA KS Pro Lenkrad</h3>
+                <p>
+                  GT-Lenkrad im Butterfly-Design, Mit einem anpassbaren
+                  HD-Display, einer leichten, kohlefaserverstärkten
+                  Konstruktion, RGB-Telemetriebeleuchtung
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">349 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20MOZA%20KS%20Pro%20Lenkrad&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20MOZA%20KS%20Pro%20Lenkrad%20(349%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/ASCHER-1.webp" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/Simucube-logo-1.png" alt="MOZA" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Lenkrad</span>
+                <h3>Simucube x Ascher Racing Ultimate</h3>
+                <p>
+                  Simucube x Ascher Racing Ultimate, crafted with the same 300
+                  mm diameter and ergonomics as a real motorsport wheel.
+                  Integrated 4” dashboard & 21 x RGB LEDs (shift lights).
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">1545,81 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Simucube%20x%20Ascher%20Racing%20Ultimate&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Simucube%20x%20Ascher%20Racing%20Ultimate%20(1545,81%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/moza-cs-pro-steering-wheel.png" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/MOZA_Racing_White.svg" alt="MOZA" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Lenkrad</span>
+                <h3>MOZA CS Pro Lenkrad</h3>
+                <p>
+                  Carbonverstärktes Rundelkrad, Anpassbares 2,99-Zoll-HD-Display,
+                  Handgenähter Griff aus Mikrofaserleder, Magnetische, geschmiedete Doppelkupplungs-Paddel aus Carbon.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">349 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Cube%20Controls%20GT%20Pro&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Cube%20Controls%20GT%20Pro%20(649%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ===== Unterkategorie: Pedale ===== -->
+        <div class="unterkategorie" id="pedale">
+          <h2 class="kat-titel">Pedale<span>.</span></h2>
+          <div class="produkt-grid">
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/MOZA_CRP2_Load_Cell_Pedals.png" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/MOZA_Racing_White.svg" alt="MOZA" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Pedale</span>
+                <h3>MOZA CRP2 Lastzellenpedalen</h3>
+                <p>
+                  200 kg Lodezelle für professionelles Bremsen, Sensorfusion mit 15-Bit-Winkelauflösung
+                  Der CRP2 besteht aus CNC-gefrästem Aluminium aus der Luftfahrtindustrie und einer Basis aus hochfestem
+                  Stahl und gewährleistet unübertroffene Haltbarkeit
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">399 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20MOZA%20CRP2%20Lastzellenpedalen&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20MOZA%20CRP2%20Lastzellenpedalen%20(349%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/heu3ps.webp" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/Heusinkveld.webp" alt="Heusinkveld" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Pedale</span>
+                <h3>Heusinkveld Ultimate+ 3-Pedal Set</h3>
+                <p>
+                  Vollständiges 3-Pedalset: Gas, Bremse und Kupplung in einem Paket,
+                  Bremspedal: 200-kg-Load-Cell,
+                  Hydraulikdämpfung: 2-Wege (Bremse + Kupplung), 1-Weg (Gas) – alle einstellbar, wartungsfrei
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">1.649 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Heusinkveld%20Ultimate+%203-Pedal%20Set&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Heusinkveld%20Ultimate+%203-Pedal%20Set%20(649%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/simucube_ap_bundle_2.png" alt="Wheelbase" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/Simucube-logo-1.png" alt="Simucube" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Pedale</span>
+                <h3>Simucube Active Pedal Set</h3>
+                <p>
+                  SC ActivePedal Pro: Pedal inkl. integriertem Motor,
+                  vollständig individuell einstellbar, max 110 Kg Druck,
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">199 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Simucube%20Pedal%20Set&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Simucube%20Pedal%20Set%20(199%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ===== Unterkategorie: Zubehör ===== -->
+        <div class="unterkategorie" id="zubehoer">
+          <h2 class="kat-titel">Zubehör<span>.</span></h2>
+          <div class="produkt-grid">
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/alphatecracing-dashboard-gt3.webp" alt="Zubehör" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/ATR_Logo.avif" alt="Simucube" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Zubehör</span>
+                <h3>AlphaTecRacing Dashboard GT3</h3>
+                <p>
+                  5“ Touchscreen mit hoher Auflösung, 43 x RGB-LEDs,
+                  USB-C Anschluss seitlich und hinten, kompatibel mit SimHub.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">349 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20AlphaTecRacing%20Dashboard%20GT3&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20AlphaTecRacing%20Dashboard%20GT3%20(349%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/MOZA-HGP-Shifter.png" alt="Zubehör" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/MOZA_Racing_White.svg" alt="MOZA" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Zubehör</span>
+                <h3>MOZA HGP Shifter</h3>
+                <p>
+                  H-Schaltung mit 7 Gängen plus sequenziellem Modus, robuste
+                  Metallbauweise.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">129 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20MOZA%20HGP%20Shifter&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20MOZA%20HGP%20Shifter%20(129%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img src="../assets/Simracing/TB1webp.webp" alt="Zubehör" class="produkt-img" />
+                <div class="produkt-marke">
+                  <img src="../assets/Simracing/Simmagic_Red_White_logo.avif" alt="Alpha Tec Racing" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Zubehör</span>
+                <h3>TB-1 Handbrake</h3>
+                <p>
+                  2-stage design simulates
+                  the resistance of a real car handbrake.
+                  Dual mode lever allows you to quickly
+                  switch between a street or track setup
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">189 €</strong>
+                  <a href="mailto:info@brg-racing.de?subject=Bestellung:%20TB-1%20Handbrake&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20TB-1%20Handbrake%20(89%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm">Bestellen</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
+    <div class="footer-grid wrapper">
+      <div class="footer-brand">
+        <p class="logo-text">BRG<span>-Racing</span></p>
+        <p class="footer-desc">Motorsport &amp; Simracing.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <strong>Shop</strong>
         <a href="racecars.html">Rennwagen</a>
-        <a href="simracing.html" class="aktiv">Simracing</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="simracing.html">Simracing</a>
       </nav>
-    </header>
 
-    <!-- ===== HAUPTINHALT ===== -->
-    <main>
-      <!-- Kopfbereich der Kategorie -->
-      <section class="seiten-kopf">
-        <div class="wrapper">
-          <p class="hero-label">Kategorie</p>
-          <h1>Simracing <span>Equipment</span></h1>
-          <p>
-            Direct-Drive-Lenkräder, Loadcell-Pedale und Zubehör - Egal ob
-            Einsteiger oder Profi, wir haben das passende Simracing-Equipment
-            für dich.
-          </p>
+      <nav class="footer-nav">
+        <strong>Kontakt</strong>
+        <a href="kontakt.html">Kontaktformular</a>
+        <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
+      </nav>
+    </div>
 
-          <!-- Unterkategorien als Sprungmarken -->
-          <nav class="sub-nav">
-            <a href="#wheelbase">Wheelbasen</a>
-            <a href="#lenkrad">Lenkräder</a>
-            <a href="#pedale">Pedale</a>
-            <a href="#zubehoer">Zubehör</a>
-          </nav>
-        </div>
-      </section>
-
-      <!-- Produktliste, nach Unterkategorien gegliedert -->
-      <section class="produkt-liste">
-        <div class="wrapper">
-          <!-- ===== Unterkategorie: Wheelbase ===== -->
-          <div class="unterkategorie" id="wheelbase">
-            <h2 class="kat-titel">Wheelbasen<span>.</span></h2>
-            <div class="produkt-grid">
-              <article class="produkt-karte">
-                <div class="produkt-bild">
-                  <img
-                    src="../assets/Simracing/Alpha-mini.png"
-                    alt="Wheelbase"
-                    class="produkt-img"
-                  />
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/Simmagic_Red_White_logo.avif"
-                      alt="MOZA"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Wheelbase</span>
-                  <h3>Simagic Alpha Mini</h3>
-                  <p>
-                    10 Nm Einsteiger Direct Drive, Quick-Release, kompatibel mit
-                    PC &amp; Xbox.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">399 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Fanatec%20CSL%20DD&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Fanatec%20CSL%20DD%20(399%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild">
-                  <img
-                    src="../assets/Simracing/R12.png"
-                    alt="Wheelbase"
-                    class="produkt-img"
-                  />
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/MOZA_Racing_White.svg"
-                      alt="MOZA"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Wheelbase</span>
-                  <h3>MOZA R12 V2</h3>
-                  <p>
-                    12 Nm Direct-Drive-Base, kompakt und leise Preis
-                    Leistungs-Sieger.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">412 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20MOZA%20R9%20V2&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20MOZA%20R9%20V2%20(439%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild">
-                  <img
-                    src="../assets/Simracing/SC3PRO-LINK-1.webp"
-                    alt="Wheelbase"
-                    class="produkt-img"
-                  />
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/Simucube-logo-1.png"
-                      alt="Simucube"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Simracing</span>
-                  <h3>Simucube 3 Pro</h3>
-                  <p>
-                    25 Nm Direct Drive, Link Quick Release <br />
-                    Die beste Wahl für Pros und alle die keine Kompromisse
-                    wollen.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">1570,80 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Simucube%202%20Pro&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Simucube%202%20Pro%20(1.199%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- ===== Unterkategorie: Lenkrad ===== -->
-          <div class="unterkategorie" id="lenkrad">
-            <h2 class="kat-titel">Lenkräder<span>.</span></h2>
-            <div class="produkt-grid">
-              <article class="produkt-karte">
-                <div class="produkt-bild">
-                  <img
-                    src="../assets/Simracing/moza-ks-pro-gt-wheel-main.png"
-                    alt="Wheelbase"
-                    class="produkt-img"
-                  />
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/MOZA_Racing_White.svg"
-                      alt="MOZA"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Lenkrad</span>
-                  <h3>MOZA KS Pro Lenkrad</h3>
-                  <p>
-                    GT-Lenkrad im Butterfly-Design, Mit einem anpassbaren
-                    HD-Display, einer leichten, kohlefaserverstärkten
-                    Konstruktion, RGB-Telemetriebeleuchtung
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">349 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20MOZA%20KS%20Pro%20Lenkrad&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20MOZA%20KS%20Pro%20Lenkrad%20(349%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild">
-                  <img
-                    src="../assets/Simracing/moza-ks-pro-gt-wheel-main.png"
-                    alt="Wheelbase"
-                    class="produkt-img"
-                  />
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/MOZA_Racing_White.svg"
-                      alt="MOZA"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Lenkrad</span>
-                  <h3>Simucube x Ascher Racing Ultimate</h3>
-                  <p>
-                    Simucube x Ascher Racing Ultimate, crafted with the same 300
-                    mm diameter and ergonomics as a real motorsport wheel.
-                    Integrated 4” dashboard & 21 x RGB LEDs (shift lights).
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">1545,81 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Simucube%20x%20Ascher%20Racing%20Ultimate&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Simucube%20x%20Ascher%20Racing%20Ultimate%20(1545,81%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild">
-                  <img
-                    src="../assets/Simracing/moza-ks-pro-gt-wheel-main.png"
-                    alt="Wheelbase"
-                    class="produkt-img"
-                  />
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/MOZA_Racing_White.svg"
-                      alt="MOZA"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Lenkrad</span>
-                  <h3>MOZA CS Pro Lenkrad</h3>
-                  <p>
-                    Carbonverstärktes Rundelkrad, Anpassbares 2,99-Zoll-HD-Display,
-                    Handgenähter Griff aus Mikrofaserleder, Magnetische, geschmiedete Doppelkupplungs-Paddel aus Carbon.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">349 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Cube%20Controls%20GT%20Pro&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Cube%20Controls%20GT%20Pro%20(649%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- ===== Unterkategorie: Pedale ===== -->
-          <div class="unterkategorie" id="pedale">
-            <h2 class="kat-titel">Pedale<span>.</span></h2>
-            <div class="produkt-grid">
-              <article class="produkt-karte">
-                <div class="produkt-bild lila">
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/logitech.png"
-                      alt="Logitech"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Pedale</span>
-                  <h3>Logitech Pro Racing Pedals</h3>
-                  <p>
-                    Loadcell-Bremse mit 100 kg, Trueforce-Feedback, magnetische
-                    Sensoren.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">349 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Logitech%20Pro%20Racing%20Pedals&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Logitech%20Pro%20Racing%20Pedals%20(349%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild grau">
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/heusinkveld.png"
-                      alt="Heusinkveld"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Pedale</span>
-                  <h3>Heusinkveld Sprint</h3>
-                  <p>
-                    Zweipedaliges High-End-Set mit Loadcell — Referenzklasse für
-                    Bremsgefühl.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">649 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Heusinkveld%20Sprint&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Heusinkveld%20Sprint%20(649%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild gruen">
-                  <div class="produkt-marke">
-                    <img
-                      src="../assets/Simracing/thrustmaster.png"
-                      alt="Thrustmaster"
-                    />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Pedale</span>
-                  <h3>Thrustmaster T-LCM</h3>
-                  <p>
-                    Loadcell-Pedalset zum Einstiegspreis, austauschbare Federn
-                    inklusive.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">199 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Thrustmaster%20T-LCM&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Thrustmaster%20T-LCM%20(199%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- ===== Unterkategorie: Zubehör ===== -->
-          <div class="unterkategorie" id="zubehoer">
-            <h2 class="kat-titel">Zubehör<span>.</span></h2>
-            <div class="produkt-grid">
-              <article class="produkt-karte">
-                <div class="produkt-bild gelb">
-                  <div class="produkt-marke">
-                    <img src="../assets/Simracing/fanatec.png" alt="Fanatec" />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Zubehör</span>
-                  <h3>Fanatec ClubSport Handbrake</h3>
-                  <p>
-                    Analoge Handbremse mit Loadcell — perfekt für Rally und
-                    Drift.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">149 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20Fanatec%20ClubSport%20Handbrake&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Fanatec%20ClubSport%20Handbrake%20(149%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild tuerkis">
-                  <div class="produkt-marke">
-                    <img src="../assets/Simracing/moza.png" alt="MOZA" />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Zubehör</span>
-                  <h3>MOZA HGP Shifter</h3>
-                  <p>
-                    H-Schaltung mit 7 Gängen plus sequenziellem Modus, robuste
-                    Metallbauweise.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">129 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20MOZA%20HGP%20Shifter&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20MOZA%20HGP%20Shifter%20(129%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-
-              <article class="produkt-karte">
-                <div class="produkt-bild rot">
-                  <div class="produkt-marke">
-                    <img src="../assets/Simracing/simhub.png" alt="SimHub" />
-                  </div>
-                </div>
-                <div class="produkt-info">
-                  <span class="tag">Zubehör</span>
-                  <h3>SimHub Dash Display</h3>
-                  <p>
-                    7-Zoll-Telemetrie-Display für Rundenzeiten, Drehzahl und
-                    Schaltanzeige.
-                  </p>
-                  <div class="produkt-fuss">
-                    <strong class="preis">89 €</strong>
-                    <a
-                      href="mailto:info@brg-racing.de?subject=Bestellung:%20SimHub%20Dash%20Display&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20SimHub%20Dash%20Display%20(89%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                      class="btn btn-sm"
-                      >Bestellen</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-      <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
-      <div class="footer-grid wrapper">
-        <div class="footer-brand">
-          <p class="logo-text">BRG<span>-Racing</span></p>
-          <p class="footer-desc">Motorsport &amp; Simracing.</p>
-        </div>
-
-        <nav class="footer-nav">
-          <strong>Shop</strong>
-          <a href="racecars.html">Rennwagen</a>
-          <a href="simracing.html">Simracing</a>
-        </nav>
-
-        <nav class="footer-nav">
-          <strong>Kontakt</strong>
-          <a href="kontakt.html">Kontaktformular</a>
-          <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
-        </nav>
+    <div class="footer-bottom">
+      <div class="wrapper">
+        <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
       </div>
+    </div>
+  </footer>
+</body>
 
-      <div class="footer-bottom">
-        <div class="wrapper">
-          <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
