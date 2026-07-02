@@ -1,768 +1,792 @@
 /* ===== VARIABLEN ===== */
 :root {
-    --primaer:  #4e5d67c8;
-    --akzent:   #F3E308;
-    --bg:       #111d26;
-    --karte:    #111d26;
-    --text:     #D0E4EF;
-    --hell:     #8a9bb0;
-    --rand:     rgba(255, 255, 255, 0.08);
-    --max-w:    1100px;
+  --primaer: #4e5d67c8;
+  --akzent: #f3e308;
+  --bg: #111d26;
+  --karte: #111d26;
+  --text: #d0e4ef;
+  --hell: #8a9bb0;
+  --rand: rgba(255, 255, 255, 0.08);
+  --max-w: 1100px;
 }
 
 /* ===== RESET ===== */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* ===== SEITEN-GRID: Header | Main | Footer ===== */
 body {
-    font-family: 'Inter', Arial, sans-serif;
-    background: linear-gradient(
-        148deg,rgba(11, 20, 27, 0.7) 10%, rgba(6, 61, 115, 0.4) 90%), 
-        url('../assets/img/dark-honeycomb.png');
-    color: var(--text);
-    line-height: 1.65;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+  font-family: "Inter", Arial, sans-serif;
+  background:
+    linear-gradient(
+      148deg,
+      rgba(11, 20, 27, 0.7) 10%,
+      rgba(6, 61, 115, 0.4) 90%
+    ),
+    url("../assets/img/dark-honeycomb.png");
+  color: var(--text);
+  line-height: 1.65;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 a {
-    color: var(--text);
-    text-decoration: none;
+  color: var(--text);
+  text-decoration: none;
 }
 
 /* Zentrierender Container mit horizontalem Innenabstand */
 .wrapper {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 0 2rem;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
 }
-
 
 /* ===== HEADER ===== */
 header {
-    font-family: 'Unbounded', cursive;
-    /* Header-Grid: Logo | Leerraum | Navigation */
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid var(--rand);
-    /* Klebt oben beim Scrollen */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: rgba(17, 29, 38, 0.591);
-    backdrop-filter: blur(12px);
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 92, 101, 0.10) 0%, transparent 70%);
+  font-family: "Unbounded", cursive;
+  /* Header-Grid: Logo | Leerraum | Navigation */
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--rand);
+  /* Klebt oben beim Scrollen */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(17, 29, 38, 0.591);
+  backdrop-filter: blur(12px);
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(76, 92, 101, 0.1) 0%,
+    transparent 70%
+  );
 }
 
 .logo {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #fff;
-    padding: 3px 8px;
-    border-radius: 8px;
-    /* Holografischer Shimmer-Effekt */
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 8px;
+  /* Holografischer Shimmer-Effekt */
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
 }
 
 /* Schimmernder Lichtstrahl */
 .logo::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-        0deg,
-        transparent,
-        transparent 30%,
-        rgba(200, 255, 0, 0.3)
-    );
-    transform: rotate(-45deg);
-    transition: all 0.5s ease;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(200, 255, 0, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
 }
 
 .logo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(200, 255, 0, 0.3);
-    color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(200, 255, 0, 0.3);
+  color: #fff;
 }
 
 .logo:hover::before {
-    opacity: 1;
-    transform: rotate(-45deg) translateY(100%);
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }
 
 .logo span {
-    color: var(--akzent);
+  color: var(--akzent);
 }
 
 header nav {
-    display: flex;
-    align-items: center;
-    gap: 1.75rem;
-    justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  justify-self: end;
 }
 
 header nav a {
-    font-size: 0.82rem;
-    color: var(--hell);
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    transition: all 0.15s;
-  
+  font-size: 0.82rem;
+  color: var(--hell);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  transition: all 0.15s;
 }
 
 header nav a:hover {
-    color: var(--bg);
-    padding: 3px 8px;
-    border-radius: 8px;
-    background-color: var(--akzent);
-    transform: scale(1.05);
+  color: var(--bg);
+  padding: 3px 8px;
+  border-radius: 8px;
+  background-color: var(--akzent);
+  transform: scale(1.05);
 }
 
 /* Aktiver Navigations-Link (aktuelle Seite) */
 header nav a.aktiv {
-    color: var(--bg);
-    padding: 3px 8px;
-    border-radius: 8px;
-    background-color: var(--akzent);
+  color: var(--bg);
+  padding: 3px 8px;
+  border-radius: 8px;
+  background-color: var(--akzent);
 }
 /* Hamburger-Button (nur mobil sichtbar) */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    padding: 4px;
-    margin-left: auto;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
 }
 
 .hamburger span {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 2px;
-    transition: transform 0.2s, opacity 0.2s;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
 }
 
 /* Checkbox ist unsichtbar, steuert das Menü via CSS */
-.nav-toggle { display: none; }
+.nav-toggle {
+  display: none;
+}
 
 .nav-toggle:checked ~ .hamburger span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 .nav-toggle:checked ~ .hamburger span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 .nav-toggle:checked ~ .hamburger span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
-
 
 /* ===== BUTTONS ===== */
 .btn {
-    display: inline-block;
-    padding: 0.65rem 1.4rem;
-    background-color: var(--primaer);
-    color: var(--text);
-    font-weight: 700;
-    font-size: 0.88rem;
-    border-radius: 6px;
-    transition: all 0.25s;
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  background-color: var(--primaer);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.88rem;
+  border-radius: 6px;
+  transition: all 0.25s;
 }
 
 .btn:hover {
-    opacity: 0.82;
-    color: var(--bg);
-    transform: scale(1.05);
-    background-color: var(--akzent);
+  opacity: 0.82;
+  color: var(--bg);
+  transform: scale(1.05);
+  background-color: var(--akzent);
 }
-
 
 .btn-sm {
-    padding: 0.45rem 1rem;
-    font-size: 0.8rem;
+  padding: 0.45rem 1rem;
+  font-size: 0.8rem;
 }
-
 
 /* ===== HERO-BEREICH ===== */
 .hero {
-    padding: 7rem 0 6rem;
-    text-align: center;
-    /* Subtiler radialer Verlauf als Hintergrund */
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 92, 101, 0.45) 0%, transparent 70%);
+  padding: 7rem 0 6rem;
+  text-align: center;
+  /* Subtiler radialer Verlauf als Hintergrund */
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(76, 92, 101, 0.45) 0%,
+    transparent 70%
+  );
 }
 
 .hero-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--akzent);
-    margin-bottom: 1.25rem;
-   
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--akzent);
+  margin-bottom: 1.25rem;
 }
 
 .hero h1 {
-    font-family: 'Unbounded', cursive;
-    /* Schriftgröße passt sich der Bildschirmbreite an */
-    font-size: clamp(1.9rem, 5vw, 3.4rem);
-    font-weight: 700;
-    line-height: 1.18;
-    color: #fff;
-    margin-bottom: 1.25rem;
+  font-family: "Unbounded", cursive;
+  /* Schriftgröße passt sich der Bildschirmbreite an */
+  font-size: clamp(1.9rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: #fff;
+  margin-bottom: 1.25rem;
 }
 
 .hero h1 span {
-    color: var(--akzent);
+  color: var(--akzent);
 }
 
 .hero-text {
-    max-width: 580px;
-    margin: 0 auto 2.5rem;
-    color: var(--hell);
-    font-size: 1.05rem;
-    line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+  color: var(--hell);
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .hero-ctas {
-    display: flex;
-    gap: 0.85rem;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 0.85rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 
 /* ===== KATEGORIEN ===== */
 .kategorien {
-    padding: 5rem 0;
-    border-top: 1px solid var(--rand);
+  padding: 5rem 0;
+  border-top: 1px solid var(--rand);
 }
 
 .kategorien h2,
 .highlights h2 {
-    font-family: 'Unbounded', cursive;
-    font-size: 1.45rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 2rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--karte);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--rand);
-    border-radius: 12px;
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 92, 101, 0.10) 0%, transparent 70%);
+  font-family: "Unbounded", cursive;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--karte);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(76, 92, 101, 0.1) 0%,
+    transparent 70%
+  );
 }
 
 /* Kategorie-Grid: 2 gleichbreite Spalten */
 .kat-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
 .kat-karte {
-    display: block;
-    background-color: var(--karte);
-    border: 1px solid var(--rand);
-    border-radius: 12px;
-    overflow: hidden;
-    color: var(--text);
-    transition: border-color 0.2s, transform 0.2s;
-   
+  display: block;
+  background-color: var(--karte);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  overflow: hidden;
+  color: var(--text);
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
 }
 
 .kat-karte:hover {
-    border-color: rgba(255, 255, 255, 0.22);
-    transform: translateY(-4px);
-    color: var(--text);
+  border-color: var(--akzent);
+  transform: translateY(-4px);
+  color: var(--text);
 }
 
 /* Farb-Platzhalter oben — werden später durch <img> ersetzt */
 .kat-bild {
-    height: 190px;
+  height: 190px;
 }
 
 .kat-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .kat-bild.rennwagen {
-    background: linear-gradient(135deg, #7a0000 0%, #2a1010 100%);
+  background: linear-gradient(135deg, #7a0000 0%, #2a1010 100%);
 }
 
 .kat-bild.simracing {
-    background: linear-gradient(135deg, #0d3460 0%, #0d1428 100%);
+  background: linear-gradient(135deg, #0d3460 0%, #0d1428 100%);
 }
 
 .kat-info {
-    padding: 1.5rem;
-    
+  padding: 1.5rem;
 }
 
 .kat-info h3 {
-    font-family: 'Unbounded', cursive;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 0.4rem;
-    
+  font-family: "Unbounded", cursive;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.4rem;
 }
 
 .kat-info p {
-    color: var(--hell);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+  color: var(--hell);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .pfeil {
-    color: var(--akzent);
-    font-size: 0.85rem;
-    font-weight: 600;
+  color: var(--akzent);
+  font-size: 0.85rem;
+  font-weight: 600;
 }
-
 
 /* ===== PRODUKT-HIGHLIGHTS ===== */
 .highlights {
-    padding: 5rem 0;
-    border-top: 1px solid var(--rand);
+  padding: 5rem 0;
+  border-top: 1px solid var(--rand);
 }
 
 /* Produkt-Grid: 3 Spalten, bricht bei Platzmangel automatisch um */
 .produkt-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .produkt-karte {
-    background-color: var(--karte);
-    border: 1px solid var(--rand);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: border-color 0.2s, transform 0.2s;
+  background-color: var(--karte);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+  /* Karten-Grid: Bild oben, Info füllt die restliche Höhe */
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .produkt-karte:hover {
-    border-color: rgba(255, 255, 255, 0.22);
-    transform: translateY(-4px);
+  border-color: var(--akzent);
+  transform: translateY(-4px);
+  border-width: 2px;
 }
 
-
 .produkt-bild {
-    padding: 5px;
-    height: 170px;
-    /* Anker für das Hersteller-Logo (oben rechts) */
-    position: relative;
+  padding: 5px;
+  height: 170px;
+  /* Anker für das Hersteller-Logo (oben rechts) */
+  position: relative;
 }
 
 .produkt-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Einheitlicher Platz für das Hersteller-Logo auf jeder Produktkarte */
 .produkt-marke {
-    position: absolute;
-    top: 0.7rem;
-    right: 0.7rem;
-    width: 58px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 6px;
-    background-color: #41414117;
-    backdrop-filter: blur(12px);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    /* Standard: Logo ist immer sichtbar */
-    opacity: 1;
-    transition: opacity 0.2s;
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  width: 58px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px;
+  background-color: #41414117;
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* Standard: Logo ist immer sichtbar */
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 
 /* Beim Hover über die Karte wird das Logo ausgeblendet */
 .produkt-karte:hover .produkt-marke {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Logo skaliert sauber in den Rahmen, egal welches Format */
 .produkt-marke img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-
 .produkt-info {
-    padding: 1.2rem 1.4rem 1.5rem;
+  padding: 1.2rem 1.4rem 1.5rem;
+  /* Spaltenlayout, damit der Bestell-Fuß immer unten sitzt */
+  display: flex;
+  flex-direction: column;
+}
+
+.produkt-info:hover {
+  padding: 1.1rem 1.3rem 1.4rem;
 }
 
 /* Kategorie-Tag über dem Titel */
 .tag {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--akzent);
-    margin-bottom: 0.55rem;
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--akzent);
+  margin-bottom: 0.55rem;
 }
 
 .produkt-info h3 {
-    font-size: 0.98rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 0.4rem;
-    line-height: 1.35;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.4rem;
+  line-height: 1.35;
 }
 
 .produkt-info p {
-    color: var(--hell);
-    font-size: 0.87rem;
-    line-height: 1.55;
-    margin-bottom: 1.2rem;
+  color: var(--hell);
+  font-size: 0.87rem;
+  line-height: 1.55;
+  margin-bottom: 1.2rem;
 }
 
-/* Preis und Bestell-Button nebeneinander */
+/* Preis und Bestell-Button nebeneinander, immer am unteren Kartenrand */
 .produkt-fuss {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
 }
 
 .preis {
-    font-family: 'Unbounded', cursive;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #fff;
+  font-family: "Unbounded", cursive;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
 }
-
 
 /* ===== FOOTER ===== */
 footer {
-    border-top: 1px solid var(--rand);
-    background-color: var(--karte);
-    padding-top: 3rem;
+  border-top: 1px solid var(--rand);
+  background-color: var(--karte);
+  padding-top: 3rem;
 }
 
 /* Footer-Grid: Marke (breit) | Shop-Links | Kontakt-Links */
 .footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 2rem;
-    padding-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .logo-text {
-    font-family: 'Unbounded', cursive;
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: var(--primaer);
-    display: inline-block;
-    padding: 3px 8px;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
+  font-family: "Unbounded", cursive;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--primaer);
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
 }
 
 .logo-text span {
-    color: var(--akzent);
+  color: var(--akzent);
 }
 
 .footer-desc {
-    color: var(--hell);
-    font-size: 0.87rem;
-    line-height: 1.65;
+  color: var(--hell);
+  font-size: 0.87rem;
+  line-height: 1.65;
 }
 
 .footer-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .footer-nav strong {
-    color: #fff;
-    font-size: 0.83rem;
-    font-weight: 600;
-    margin-bottom: 0.35rem;
+  color: #fff;
+  font-size: 0.83rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
 }
 
 .footer-nav a {
-    color: var(--hell);
-    font-size: 0.87rem;
-    transition: color 0.15s;
+  color: var(--hell);
+  font-size: 0.87rem;
+  transition: color 0.15s;
 }
 
 .footer-nav a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--rand);
-    padding: 1.25rem 0;
+  border-top: 1px solid var(--rand);
+  padding: 1.25rem 0;
 }
 
 .footer-bottom p {
-    color: var(--hell);
-    font-size: 0.78rem;
+  color: var(--hell);
+  font-size: 0.78rem;
 }
-
 
 /* ===== SEITEN-KOPF (Kopfbereich der Unterseiten) ===== */
 .seiten-kopf {
-    padding: 5rem 0 3.5rem;
-    text-align: center;
-    /* Gleicher radialer Verlauf wie im Hero der Startseite */
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 92, 101, 0.45) 0%, transparent 70%);
-    border-bottom: 1px solid var(--rand);
+  padding: 5rem 0 3.5rem;
+  text-align: center;
+  /* Gleicher radialer Verlauf wie im Hero der Startseite */
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(76, 92, 101, 0.45) 0%,
+    transparent 70%
+  );
+  border-bottom: 1px solid var(--rand);
 }
 
 .seiten-kopf h1 {
-    font-family: 'Unbounded', cursive;
-    font-size: clamp(1.8rem, 4.5vw, 2.8rem);
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 1rem;
+  font-family: "Unbounded", cursive;
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
 .seiten-kopf h1 span {
-    color: var(--akzent);
+  color: var(--akzent);
 }
 
 .seiten-kopf p {
-    max-width: 560px;
-    margin: 0 auto;
-    color: var(--hell);
-    font-size: 1rem;
+  max-width: 560px;
+  margin: 0 auto;
+  color: var(--hell);
+  font-size: 1rem;
 }
-
 
 /* ===== PRODUKT-LISTE (Kategorieseiten) ===== */
 .produkt-liste {
-    padding: 4rem 0 5rem;
+  padding: 4rem 0 5rem;
 }
 
 /* Unterkategorie-Navigation: Sprungmarken (kein JavaScript) */
 .sub-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    justify-content: center;
-    margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 1.75rem;
 }
 
 .sub-nav a {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--hell);
-    padding: 0.4rem 1rem;
-    border: 1px solid var(--rand);
-    border-radius: 999px;
-    transition: all 0.15s;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--hell);
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--rand);
+  border-radius: 999px;
+  transition: all 0.15s;
 }
 
 .sub-nav a:hover {
-    color: var(--bg);
-    background-color: var(--akzent);
-    border-color: var(--akzent);
+  color: var(--bg);
+  background-color: var(--akzent);
+  border-color: var(--akzent);
 }
 
 /* Ein Unterkategorie-Block innerhalb der Produktliste */
 .unterkategorie {
-    padding-top: 3.5rem;
-    /* Abstand, damit der sticky Header die Sprungmarke nicht verdeckt */
-    scroll-margin-top: 90px;
+  padding-top: 3.5rem;
+  /* Abstand, damit der sticky Header die Sprungmarke nicht verdeckt */
+  scroll-margin-top: 90px;
 }
 
 .kat-titel {
-    font-family: 'Unbounded', cursive;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 1px solid var(--rand);
+  font-family: "Unbounded", cursive;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rand);
 }
 
 .kat-titel span {
-    color: var(--akzent);
+  color: var(--akzent);
 }
-
 
 /* ===== KONTAKT-SEITE ===== */
 .kontakt {
-    padding: 4rem 0 5rem;
+  padding: 4rem 0 5rem;
 }
 
 /* Kontakt-Grid: Info-Spalte | Formular-Spalte */
 .kontakt-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 1.5rem;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 1.5rem;
+  align-items: start;
 }
 
 .kontakt-info,
 .kontakt-formular {
-    background-color: var(--karte);
-    border: 1px solid var(--rand);
-    border-radius: 12px;
-    padding: 2rem;
+  background-color: var(--karte);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  padding: 2rem;
 }
 
 .kontakt-info h2,
 .kontakt-formular h2 {
-    font-family: 'Unbounded', cursive;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 1.25rem;
+  font-family: "Unbounded", cursive;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.25rem;
 }
 
 /* Einzelner Kontakt-Eintrag (z. B. Adresse, Telefon, Mail) */
 .kontakt-eintrag {
-    margin-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .kontakt-eintrag strong {
-    display: block;
-    color: var(--akzent);
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.3rem;
+  display: block;
+  color: var(--akzent);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
 }
 
 .kontakt-eintrag p,
 .kontakt-eintrag a {
-    color: var(--hell);
-    font-size: 0.92rem;
+  color: var(--hell);
+  font-size: 0.92rem;
 }
 
 .kontakt-eintrag a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 /* Ergonomisches Formular: Beschriftung über dem Feld */
 .formular-feld {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
 }
 
 .formular-feld label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .formular-feld input,
 .formular-feld select,
 .formular-feld textarea {
-    font-family: inherit;
-    font-size: 0.92rem;
-    padding: 0.7rem 0.85rem;
-    background-color: var(--bg);
-    border: 1px solid var(--rand);
-    border-radius: 6px;
-    color: var(--text);
+  font-family: inherit;
+  font-size: 0.92rem;
+  padding: 0.7rem 0.85rem;
+  background-color: var(--bg);
+  border: 1px solid var(--rand);
+  border-radius: 6px;
+  color: var(--text);
 }
 
 .formular-feld input:focus,
 .formular-feld select:focus,
 .formular-feld textarea:focus {
-    outline: none;
-    border-color: var(--akzent);
+  outline: none;
+  border-color: var(--akzent);
 }
 
 .formular-feld textarea {
-    resize: vertical;
-    min-height: 130px;
+  resize: vertical;
+  min-height: 130px;
 }
 
 /* Absende-Button — nutzt .btn, braucht aber Reset für <button> */
 .kontakt-formular .btn {
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    width: 100%;
-    margin-top: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  margin-top: 0.5rem;
 }
-
 
 /* ===== MOBIL (≤ 680px) ===== */
 @media (max-width: 680px) {
-    /* Header: Logo | Hamburger — Nav klappt darunter auf */
-    header {
-        grid-template-columns: auto auto;
-        padding: 0.9rem 1.25rem;
-    }
+  /* Header: Logo | Hamburger — Nav klappt darunter auf */
+  header {
+    grid-template-columns: auto auto;
+    padding: 0.9rem 1.25rem;
+  }
 
-    .hamburger {
-        display: flex;
-        justify-self: end;
-    }
+  .hamburger {
+    display: flex;
+    justify-self: end;
+  }
 
-    header nav {
-        display: none;
-        grid-column: 1 / -1;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.9rem;
-        padding: 1rem 0;
-        border-top: 1px solid var(--rand);
-        margin-top: 0.5rem;
-    }
+  header nav {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--rand);
+    margin-top: 0.5rem;
+  }
 
-    .nav-toggle:checked ~ nav {
-        display: flex;
-    }
+  .nav-toggle:checked ~ nav {
+    display: flex;
+  }
 
-    /* Hero: weniger Abstand auf kleinen Bildschirmen */
-    .hero {
-        padding: 4rem 0 3.5rem;
-    }
+  /* Hero: weniger Abstand auf kleinen Bildschirmen */
+  .hero {
+    padding: 4rem 0 3.5rem;
+  }
 
-    /* Kategorien: 1 Spalte statt 2 */
-    .kat-grid {
-        grid-template-columns: 1fr;
-    }
+  /* Kategorien: 1 Spalte statt 2 */
+  .kat-grid {
+    grid-template-columns: 1fr;
+  }
 
-    /* Footer: 1 Spalte statt 3 */
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+  /* Footer: 1 Spalte statt 3 */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 
-    /* Kontakt: 1 Spalte statt 2 */
-    .kontakt-grid {
-        grid-template-columns: 1fr;
-    }
+  /* Kontakt: 1 Spalte statt 2 */
+  .kontakt-grid {
+    grid-template-columns: 1fr;
+  }
 
-    /* Seiten-Kopf: weniger Abstand auf kleinen Bildschirmen */
-    .seiten-kopf {
-        padding: 3.5rem 0 2.5rem;
-    }
+  /* Seiten-Kopf: weniger Abstand auf kleinen Bildschirmen */
+  .seiten-kopf {
+    padding: 3.5rem 0 2.5rem;
+  }
 }

@@ -1,187 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BRG-Racing | Racecars & Simracing</title>
-    <link rel="stylesheet" href="./styles/style-main.css">
+    <link rel="stylesheet" href="./styles/style-main.css" />
     <!-- Google Fonts: Inter (Text) & Unbounded (Überschriften) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- ===== HEADER ===== -->
     <header>
-        <a href="index.html" class="logo">BRG<span>-Racing</span></a>
+      <a href="index.html" class="logo">BRG<span>-Racing</span></a>
 
-        <!-- Checkbox steuert das mobile Menü (kein JavaScript) -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+      <!-- Checkbox steuert das mobile Menü (kein JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-        <nav>
-            <a href="index.html" class="aktiv">Start</a>
-            <a href="./html/racecars.html">Rennwagen</a>
-            <a href="./html/simracing.html">Simracing</a>
-            <a href="./html/kontakt.html">Kontakt</a>
-        </nav>
+      <nav>
+        <a href="index.html" class="aktiv">Start</a>
+        <a href="./html/racecars.html">Rennwagen</a>
+        <a href="./html/simracing.html">Simracing</a>
+        <a href="./html/kontakt.html">Kontakt</a>
+      </nav>
     </header>
-
 
     <!-- ===== HAUPTINHALT ===== -->
     <main>
+      <!-- Hero-Bereich: Einstieg und Hauptaussage -->
+      <section class="hero">
+        <div class="wrapper">
+          <p class="hero-label">Motorsport & Simracing</p>
+          <h1>
+            Dein Fahrgefühl.<br /><span>Auf der Strecke und daheim.</span>
+          </h1>
+          <p class="hero-text">
+            Hochwertige Rennwagen und professionelles Simracing-Equipment — für
+            alle, die Motorsport wirklich leben.
+          </p>
+          <div class="hero-ctas">
+            <a href="./html/racecars.html" class="btn">Rennwagen entdecken</a>
+            <a href="./html/simracing.html" class="btn btn-ghost"
+              >Simracing Shop</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <!-- Hero-Bereich: Einstieg und Hauptaussage -->
-        <section class="hero">
-            <div class="wrapper">
-                <p class="hero-label">Motorsport & Simracing</p>
-                <h1>Dein Fahrgefühl.<br><span>Auf der Strecke und daheim.</span></h1>
-                <p class="hero-text">
-                    Hochwertige Rennwagen und professionelles Simracing-Equipment —
-                    für alle, die Motorsport wirklich leben.
+      <!-- Kategorie-Übersicht: 2-spaltiges Grid -->
+      <section class="kategorien">
+        <div class="wrapper">
+          <h2>Unsere Kategorien</h2>
+          <div class="kat-grid">
+            <a href="./html/racecars.html" class="kat-karte">
+              <!-- Platzhalter — wird später durch echtes Bild ersetzt -->
+              <div class="kat-bild rennwagen">
+                <img
+                  src="../eirikb/assets/racecars/Castellet-Motorsport.jpg"
+                  alt="Rennwagen"
+                  class="kat-img"
+                />
+              </div>
+              <div class="kat-info">
+                <h3>Rennwagen</h3>
+                <p>GT3 bis Open-Wheel — gebraucht und neu</p>
+                <span class="pfeil">Alle Fahrzeuge &rarr;</span>
+              </div>
+            </a>
+
+            <a href="./html/simracing.html" class="kat-karte">
+              <div class="kat-bild simracing">
+                <img
+                  src="../eirikb/assets/Simracing/MOZA_Racing_Racing_Series-Update.webp"
+                  alt="Simracing"
+                  class="kat-img"
+                />
+              </div>
+              <div class="kat-info">
+                <h3>Simracing</h3>
+                <p>Lenkräder, Pedale, Cockpits und mehr</p>
+                <span class="pfeil">Zum Shop &rarr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Produkt-Highlights: 3-spaltiges Grid -->
+      <section class="highlights">
+        <div class="wrapper">
+          <h2>Highlights</h2>
+          <div class="produkt-grid">
+            <!-- Produkt 1 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img
+                  src="./assets/racecars/duqueine-lmp3.webp"
+                  alt="Wheelbase"
+                  class="produkt-img"
+                />
+                <div class="produkt-marke">
+                  <img
+                    src="./assets/racecars/duqueine-logo-28.svg"
+                    alt="Hersteller-Logo"
+                  />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Rennwagen</span>
+                <h3>Duqueine LMP3</h3>
+                <p>
+                  The DUQUEINE D09 LMP3: equipped with a Toyota twin-turbo V6
+                  engine, for Racing in LMP3
                 </p>
-                <div class="hero-ctas">
-                    <a href="./html/racecars.html" class="btn">Rennwagen entdecken</a>
-                    <a href="./html/simracing.html" class="btn btn-ghost">Simracing Shop</a>
+                <div class="produkt-fuss">
+                  <strong class="preis">89.800 €</strong>
+                  <a href="./html/bestellen.html" class="btn btn-sm"
+                    >Bestellen</a
+                  >
                 </div>
-            </div>
-        </section>
+              </div>
+            </article>
 
-
-        <!-- Kategorie-Übersicht: 2-spaltiges Grid -->
-        <section class="kategorien">
-            <div class="wrapper">
-                <h2>Unsere Kategorien</h2>
-                <div class="kat-grid">
-
-                    <a href="./html/racecars.html" class="kat-karte">
-                        <!-- Platzhalter — wird später durch echtes Bild ersetzt -->
-                        <div class="kat-bild rennwagen">
-                          <img src="../eirikb/assets/racecars/Castellet-Motorsport.jpg" alt="Rennwagen" class="kat-img">
-                        </div>
-                        <div class="kat-info">
-                            <h3>Rennwagen</h3>
-                            <p>GT3 bis Open-Wheel — gebraucht und neu</p>
-                            <span class="pfeil">Alle Fahrzeuge &rarr;</span>
-                        </div>
-                    </a>
-
-                    <a href="./html/simracing.html" class="kat-karte">
-                        <div class="kat-bild simracing">
-                          <img src="../eirikb/assets/Simracing/MOZA_Racing_Racing_Series-Update.webp" alt="Simracing" class="kat-img">
-                        </div>
-                        <div class="kat-info">
-                            <h3>Simracing</h3>
-                            <p>Lenkräder, Pedale, Cockpits und mehr</p>
-                            <span class="pfeil">Zum Shop &rarr;</span>
-                        </div>
-                    </a>
-
+            <!-- Produkt 2 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img
+                  src="./assets/Simracing/SC3PRO-LINK-1.webp"
+                  alt="Wheelbase"
+                  class="produkt-img"
+                />
+                <div class="produkt-marke">
+                  <img
+                    src="./assets/Simracing/Simucube-logo-1.png"
+                    alt="Simucube"
+                  />
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Produkt-Highlights: 3-spaltiges Grid -->
-        <section class="highlights">
-            <div class="wrapper">
-                <h2>Highlights</h2>
-                <div class="produkt-grid">
-
-                    <!-- Produkt 1 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild">
-                            <img src="./assets/racecars/duqueine-lmp3.webp" alt="Wheelbase" class="produkt-img">
-                            <div class="produkt-marke"><img src="./assets/racecars/duqueine-logo-28.svg" alt="Hersteller-Logo"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">Rennwagen</span>
-                            <h3>Duqueine LMP3</h3>
-                            <p>The DUQUEINE D09 LMP3: equipped with a Toyota twin-turbo V6 engine, for Racing in LMP3</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">4.800 €</strong>
-                                <a href="./html/bestellen.html" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Produkt 2 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild">
-                            <img src="./assets/Simracing/SC3PRO-LINK-1.webp" alt="Wheelbase" class="produkt-img">
-                            <div class="produkt-marke"><img src="./assets/Simracing/Simucube-logo-1.png" alt="Simucube"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">Simracing</span>
-                            <h3>Simucube 3 Pro</h3>
-                            <p>25 Nm Direct Drive, Link Quick Release</p>
-                            <br> <br>
-                            <div class="produkt-fuss">
-                                <strong class="preis">1570,80 €</strong>
-                                <a href="./html/bestellen.html" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Produkt 3 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild">
-                          <img src="./assets/racecars/porsche-gt3r-992.jpg" class="produkt-img">
-                            <div class="produkt-marke"><img src="./assets/racecars/Porsche_Symbol_2.webp" alt="Hersteller-Logo"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">Rennwagen</span>
-                            <h3>Porsche GT3R 992.2</h3>
-                            <p>Homologiert für FIA GT3-Klasse, 565 PS, Sequenzielles Porsche Sechsgang-Getriebe</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">652.000 €</strong>
-                                <a href="./html/bestellen.html" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Simracing</span>
+                <h3>Simucube 3 Pro</h3>
+                <p>25 Nm Direct Drive, Link Quick Release</p>
+                <div class="produkt-fuss">
+                  <strong class="preis">1570,80 €</strong>
+                  <a href="./html/bestellen.html" class="btn btn-sm"
+                    >Bestellen</a
+                  >
                 </div>
-            </div>
-        </section>
+              </div>
+            </article>
 
+            <!-- Produkt 3 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild">
+                <img
+                  src="./assets/racecars/porsche-gt3r-992.jpg"
+                  class="produkt-img"
+                />
+                <div class="produkt-marke">
+                  <img
+                    src="./assets/racecars/Porsche_Symbol_2.webp"
+                    alt="Hersteller-Logo"
+                  />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Rennwagen</span>
+                <h3>Porsche GT3R 992.2</h3>
+                <p>
+                  Homologiert für FIA GT3-Klasse, 565 PS, Sequenzielles Porsche
+                  Sechsgang-Getriebe
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">652.000 €</strong>
+                  <a href="./html/bestellen.html" class="btn btn-sm"
+                    >Bestellen</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
-        <div class="footer-grid wrapper">
-
-            <div class="footer-brand">
-                <p class="logo-text">BRG<span>-Racing</span></p>
-                <p class="footer-desc">Motorsport & Simracing.</p>
-            </div>
-
-            <nav class="footer-nav">
-                <strong>Shop</strong>
-                <a href="./html/racecars.html">Rennwagen</a>
-                <a href="./html/simracing.html">Simracing</a>
-            </nav>
-
-            <nav class="footer-nav">
-                <strong>Kontakt</strong>
-                <a href="./html/kontakt.html">Kontaktformular</a>
-                <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
-            </nav>
-
+      <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
+      <div class="footer-grid wrapper">
+        <div class="footer-brand">
+          <p class="logo-text">BRG<span>-Racing</span></p>
+          <p class="footer-desc">Motorsport & Simracing.</p>
         </div>
 
-        <div class="footer-bottom">
-            <div class="wrapper">
-                <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
-            </div>
+        <nav class="footer-nav">
+          <strong>Shop</strong>
+          <a href="./html/racecars.html">Rennwagen</a>
+          <a href="./html/simracing.html">Simracing</a>
+        </nav>
+
+        <nav class="footer-nav">
+          <strong>Kontakt</strong>
+          <a href="./html/kontakt.html">Kontaktformular</a>
+          <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
         </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

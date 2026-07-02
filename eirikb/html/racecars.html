@@ -1,193 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BRG-Racing | Rennwagen</title>
-    <link rel="stylesheet" href="../styles/style-main.css">
+    <link rel="stylesheet" href="../styles/style-main.css" />
     <!-- Google Fonts: Inter (Text) & Unbounded (Überschriften) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- ===== HEADER ===== -->
     <header>
-        <a href="../index.html" class="logo">BRG<span>-Racing</span></a>
+      <a href="../index.html" class="logo">BRG<span>-Racing</span></a>
 
-        <!-- Checkbox steuert das mobile Menü (kein JavaScript) -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+      <!-- Checkbox steuert das mobile Menü (kein JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-        <nav>
-            <a href="../index.html">Start</a>
-            <a href="racecars.html" class="aktiv">Rennwagen</a>
-            <a href="simracing.html">Simracing</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
+      <nav>
+        <a href="../index.html">Start</a>
+        <a href="racecars.html" class="aktiv">Rennwagen</a>
+        <a href="simracing.html">Simracing</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
     </header>
-
 
     <!-- ===== HAUPTINHALT ===== -->
     <main>
+      <!-- Kopfbereich der Kategorie -->
+      <section class="seiten-kopf">
+        <div class="wrapper">
+          <p class="hero-label">Kategorie</p>
+          <h1>Rennwagen <span>&amp; Karts</span></h1>
+          <p>
+            Vom Einsteiger-Kart bis zum GT-Rennwagen — geprüft, überholt und
+            startklar für die Rennstrecke.
+          </p>
+        </div>
+      </section>
 
-        <!-- Kopfbereich der Kategorie -->
-        <section class="seiten-kopf">
-            <div class="wrapper">
-                <p class="hero-label">Kategorie</p>
-                <h1>Rennwagen <span>&amp; Karts</span></h1>
-                <p>
-                    Vom Einsteiger-Kart bis zum GT-Rennwagen — geprüft, überholt
-                    und startklar für die Rennstrecke.
-                </p>
-            </div>
-        </section>
-
-
-        <!-- Produktliste: Grid mit automatischem Umbruch -->
-        <section class="produkt-liste">
-            <div class="wrapper">
-                <div class="produkt-grid">
-
-                    <!-- Produkt 1 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild rot">
-                            <!-- Einheitlicher Platz für das Hersteller-Logo -->
-                            <div class="produkt-marke"><img src="../assets/racecars/tony-kart.png" alt="Tony Kart"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">Kart</span>
-                            <h3>Tony Kart Racer 401 R</h3>
-                            <p>KF2-Kart, 50 ccm, komplett überholt, sofort rennbereit.</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">4.800 €</strong>
-                                <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Tony%20Kart%20Racer%20401%20R&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Tony%20Kart%20Racer%20401%20R%20(4.800%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Produkt 2 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild blau">
-                            <div class="produkt-marke"><img src="../assets/racecars/renault.png" alt="Renault"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">Formel</span>
-                            <h3>Formel Renault 2.0</h3>
-                            <p>210 PS, sequenzielles Getriebe, ideal für den Formelsport-Einstieg.</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">32.000 €</strong>
-                                <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Formel%20Renault%202.0&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Formel%20Renault%202.0%20(32.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Produkt 3 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild gruen">
-                            <div class="produkt-marke"><img src="../assets/racecars/bmw.png" alt="BMW"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">GT4</span>
-                            <h3>BMW M3 GT4</h3>
-                            <p>480 PS, FIA-homologiert, wartungsarm und langstreckentauglich.</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">149.000 €</strong>
-                                <a href="mailto:info@brg-racing.de?subject=Bestellung:%20BMW%20M3%20GT4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20BMW%20M3%20GT4%20(149.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Produkt 4 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild gelb">
-                            <div class="produkt-marke"><img src="../assets/racecars/porsche.png" alt="Porsche"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">GT3 Cup</span>
-                            <h3>Porsche 911 GT3 Cup</h3>
-                            <p>510 PS, aus einer Saison Carrera Cup, inkl. Ersatzteilpaket.</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">189.000 €</strong>
-                                <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Porsche%20911%20GT3%20Cup&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Porsche%20911%20GT3%20Cup%20(189.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Produkt 5 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild orange">
-                            <div class="produkt-marke"><img src="../assets/racecars/caterham.png" alt="Caterham"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">Trackday</span>
-                            <h3>Caterham Seven 360</h3>
-                            <p>180 PS bei nur 560 kg — kompromissloser Fahrspaß für die Strecke.</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">42.000 €</strong>
-                                <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Caterham%20Seven%20360&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Caterham%20Seven%20360%20(42.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Produkt 6 -->
-                    <article class="produkt-karte">
-                        <div class="produkt-bild grau">
-                            <div class="produkt-marke"><img src="../assets/racecars/ligier.png" alt="Ligier"></div>
-                        </div>
-                        <div class="produkt-info">
-                            <span class="tag">Formel 4</span>
-                            <h3>Ligier JS F4</h3>
-                            <p>160 PS, Monocoque-Chassis, perfekt für den Nachwuchs-Motorsport.</p>
-                            <div class="produkt-fuss">
-                                <strong class="preis">55.000 €</strong>
-                                <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Ligier%20JS%20F4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Ligier%20JS%20F4%20(55.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A" class="btn btn-sm">Bestellen</a>
-                            </div>
-                        </div>
-                    </article>
-
+      <!-- Produktliste: Grid mit automatischem Umbruch -->
+      <section class="produkt-liste">
+        <div class="wrapper">
+          <div class="produkt-grid">
+            <!-- Produkt 1 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild rot">
+                <!-- Einheitlicher Platz für das Hersteller-Logo -->
+                <div class="produkt-marke">
+                  <img src="../assets/racecars/tony-kart.png" alt="Tony Kart" />
                 </div>
-            </div>
-        </section>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Kart</span>
+                <h3>Tony Kart Racer 401 R</h3>
+                <p>KF2-Kart, 50 ccm, komplett überholt, sofort rennbereit.</p>
+                <div class="produkt-fuss">
+                  <strong class="preis">4.800 €</strong>
+                  <a
+                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Tony%20Kart%20Racer%20401%20R&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Tony%20Kart%20Racer%20401%20R%20(4.800%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm"
+                    >Bestellen</a
+                  >
+                </div>
+              </div>
+            </article>
 
+            <!-- Produkt 2 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild blau">
+                <div class="produkt-marke">
+                  <img src="../assets/racecars/renault.png" alt="Renault" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Formel</span>
+                <h3>Formel Renault 2.0</h3>
+                <p>
+                  210 PS, sequenzielles Getriebe, ideal für den
+                  Formelsport-Einstieg.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">32.000 €</strong>
+                  <a
+                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Formel%20Renault%202.0&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Formel%20Renault%202.0%20(32.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm"
+                    >Bestellen</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Produkt 3 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild gruen">
+                <div class="produkt-marke">
+                  <img src="../assets/racecars/bmw.png" alt="BMW" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">GT4</span>
+                <h3>BMW M3 GT4</h3>
+                <p>
+                  480 PS, FIA-homologiert, wartungsarm und langstreckentauglich.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">149.000 €</strong>
+                  <a
+                    href="mailto:info@brg-racing.de?subject=Bestellung:%20BMW%20M3%20GT4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20BMW%20M3%20GT4%20(149.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm"
+                    >Bestellen</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Produkt 4 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild gelb">
+                <div class="produkt-marke">
+                  <img src="../assets/racecars/porsche.png" alt="Porsche" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">GT3 Cup</span>
+                <h3>Porsche 911 GT3 Cup</h3>
+                <p>
+                  510 PS, aus einer Saison Carrera Cup, inkl. Ersatzteilpaket.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">189.000 €</strong>
+                  <a
+                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Porsche%20911%20GT3%20Cup&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Porsche%20911%20GT3%20Cup%20(189.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm"
+                    >Bestellen</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Produkt 5 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild orange">
+                <div class="produkt-marke">
+                  <img src="../assets/racecars/caterham.png" alt="Caterham" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Trackday</span>
+                <h3>Caterham Seven 360</h3>
+                <p>
+                  180 PS bei nur 560 kg — kompromissloser Fahrspaß für die
+                  Strecke.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">42.000 €</strong>
+                  <a
+                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Caterham%20Seven%20360&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Caterham%20Seven%20360%20(42.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm"
+                    >Bestellen</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Produkt 6 -->
+            <article class="produkt-karte">
+              <div class="produkt-bild grau">
+                <div class="produkt-marke">
+                  <img src="../assets/racecars/ligier.png" alt="Ligier" />
+                </div>
+              </div>
+              <div class="produkt-info">
+                <span class="tag">Formel 4</span>
+                <h3>Ligier JS F4</h3>
+                <p>
+                  160 PS, Monocoque-Chassis, perfekt für den
+                  Nachwuchs-Motorsport.
+                </p>
+                <div class="produkt-fuss">
+                  <strong class="preis">55.000 €</strong>
+                  <a
+                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Ligier%20JS%20F4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Ligier%20JS%20F4%20(55.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                    class="btn btn-sm"
+                    >Bestellen</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
-        <div class="footer-grid wrapper">
-
-            <div class="footer-brand">
-                <p class="logo-text">BRG<span>-Racing</span></p>
-                <p class="footer-desc">Motorsport &amp; Simracing.</p>
-            </div>
-
-            <nav class="footer-nav">
-                <strong>Shop</strong>
-                <a href="racecars.html">Rennwagen</a>
-                <a href="simracing.html">Simracing</a>
-            </nav>
-
-            <nav class="footer-nav">
-                <strong>Kontakt</strong>
-                <a href="kontakt.html">Kontaktformular</a>
-                <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
-            </nav>
-
+      <!-- Footer-Grid: Info | Shop-Links | Kontakt-Links -->
+      <div class="footer-grid wrapper">
+        <div class="footer-brand">
+          <p class="logo-text">BRG<span>-Racing</span></p>
+          <p class="footer-desc">Motorsport &amp; Simracing.</p>
         </div>
 
-        <div class="footer-bottom">
-            <div class="wrapper">
-                <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
-            </div>
+        <nav class="footer-nav">
+          <strong>Shop</strong>
+          <a href="racecars.html">Rennwagen</a>
+          <a href="simracing.html">Simracing</a>
+        </nav>
+
+        <nav class="footer-nav">
+          <strong>Kontakt</strong>
+          <a href="kontakt.html">Kontaktformular</a>
+          <a href="mailto:info@brg-racing.de">info@brg-racing.de</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p>&copy; 2026 BRG-Racing. Alle Rechte vorbehalten.</p>
         </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
