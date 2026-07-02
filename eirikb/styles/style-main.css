@@ -19,7 +19,7 @@
   padding: 0;
 }
 
-/* ===== SEITEN-GRID: Header | Main | Footer ===== */
+/* ===== SEITEN-GRID: Laufband | Header | Main | Footer ===== */
 body {
   font-family: "Inter", Arial, sans-serif;
   background:
@@ -32,7 +32,7 @@ body {
   color: var(--text);
   line-height: 1.65;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
   min-height: 100vh;
 }
 
@@ -46,6 +46,91 @@ a {
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* ===== MARKEN-LAUFBAND (über der Navigation) ===== */
+/* Endlosschleife rein per CSS-Animation — kein JavaScript.
+   Der Logo-Satz (10 Marken) liegt doppelt in der Spur; verschoben
+   wird genau um die Breite eines Satzes (10 × 220px), dann springt
+   die Animation unsichtbar auf den Anfang zurück. */
+@keyframes marken-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-220px * 10));
+  }
+}
+
+.marken-band {
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--rand);
+  height: 72px;
+  overflow: hidden;
+  /* Anker für die weichen Kanten links/rechts */
+  position: relative;
+}
+
+/* Weiche Kanten: Logos tauchen links sanft auf und laufen rechts aus */
+.marken-band::before,
+.marken-band::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 140px;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+}
+
+.marken-band::before {
+  left: 0;
+}
+
+.marken-band::after {
+  right: 0;
+  transform: rotateZ(180deg);
+}
+
+/* Grid-Spur: alle Logos in einer Reihe mit fester Spaltenbreite */
+.marken-spur {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 220px;
+  height: 100%;
+  /* 60s für 10 Marken = gleiches Tempo wie zuvor 30s für 5 Marken */
+  animation: marken-scroll 60s linear infinite;
+}
+
+/* Beim Überfahren mit der Maus pausiert das Laufband */
+.marken-band:hover .marken-spur {
+  animation-play-state: paused;
+}
+
+.marken-slide {
+  display: grid;
+  place-items: center;
+  padding: 0 1.75rem;
+}
+
+/* Logos skalieren einheitlich, egal welches Dateiformat */
+.marken-slide img {
+  max-width: 100%;
+  max-height: 40px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.marken-slide img:hover {
+  opacity: 1;
+}
+
+/* Barrierefreiheit: Systemeinstellung "weniger Bewegung" respektieren */
+@media (prefers-reduced-motion: reduce) {
+  .marken-spur {
+    animation: none;
+  }
 }
 
 /* ===== HEADER ===== */
@@ -747,6 +832,20 @@ footer {
   .hamburger {
     display: flex;
     justify-self: end;
+  }
+
+  /* Marken-Laufband: flacher, schmalere weiche Kanten */
+  .marken-band {
+    height: 56px;
+  }
+
+  .marken-band::before,
+  .marken-band::after {
+    width: 60px;
+  }
+
+  .marken-slide img {
+    max-height: 30px;
   }
 
   header nav {
