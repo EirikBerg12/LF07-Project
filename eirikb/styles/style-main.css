@@ -1,3 +1,6 @@
+/* BRG-Racing — zentrales Stylesheet für alle Seiten.
+   Seitenaufbau, Header, Produktkarten und Footer nutzen CSS Grid. */
+
 /* ===== VARIABLEN ===== */
 :root {
   --primaer: #4e5d67c8;
@@ -394,7 +397,7 @@ header nav a.aktiv {
   color: var(--text);
 }
 
-/* Farb-Platzhalter oben — werden später durch <img> ersetzt */
+/* Bildfläche der Kategorie-Karten; Farbverlauf dient als Fallback */
 .kat-bild {
   height: 190px;
 }
@@ -481,6 +484,14 @@ header nav a.aktiv {
   object-fit: cover;
   display: block;
 }
+
+/* Farbige Platzhalterflächen für Produktkarten ohne Foto (racecars.html) */
+.produkt-bild.rot { background: linear-gradient(135deg, #7a0000 0%, #2a1010 100%); }
+.produkt-bild.blau { background: linear-gradient(135deg, #0d3460 0%, #0d1428 100%); }
+.produkt-bild.gruen { background: linear-gradient(135deg, #0f4d32 0%, #101f16 100%); }
+.produkt-bild.gelb { background: linear-gradient(135deg, #8a7400 0%, #2a2410 100%); }
+.produkt-bild.orange { background: linear-gradient(135deg, #8a4200 0%, #2a1810 100%); }
+.produkt-bild.grau { background: linear-gradient(135deg, #4a5560 0%, #1a2026 100%); }
 
 /* Einheitlicher Platz für das Hersteller-Logo auf jeder Produktkarte */
 .produkt-marke {
