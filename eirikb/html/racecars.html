@@ -1,5 +1,6 @@
 <!doctype html>
-<!-- Kategorieseite Rennwagen: 6 Produkte im Grid, Bestellung per mailto-Link -->
+<!-- Kategorieseite Rennwagen: Produkte in den Unterkategorien
+     GT-Rennwagen, Prototypen, Formel und Trackday & Kart; Bestellung per mailto-Link -->
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -72,161 +73,268 @@
           <p class="hero-label">Kategorie</p>
           <h1>Rennwagen <span>&amp; Karts</span></h1>
           <p>
-            Vom Einsteiger-Kart bis zum GT-Rennwagen — geprüft, überholt und
+            Vom Einsteiger-Kart bis zum LMP2-Prototyp — geprüft, überholt und
             startklar für die Rennstrecke.
           </p>
+
+          <!-- Unterkategorien als Sprungmarken -->
+          <nav class="sub-nav">
+            <a href="#gt">GT-Rennwagen</a>
+            <a href="#prototypen">Prototypen</a>
+            <a href="#formel">Formel</a>
+            <a href="#trackday">Trackday &amp; Kart</a>
+          </nav>
         </div>
       </section>
 
-      <!-- Produktliste: Grid mit automatischem Umbruch -->
+      <!-- Produktliste, nach Unterkategorien gegliedert.
+           Produktfotos: eigene Assets sowie Wikimedia Commons (frei lizenziert):
+           bmw-m4-gt4.jpg, porsche-992-cup.jpg, ligier-jsp320.jpg, ligier-jsp217.jpg,
+           ligier-jsf4.jpg, formel-renault.jpg, caterham-420-cup.jpg, tony-kart-viper.jpg -->
       <section class="produkt-liste">
         <div class="wrapper">
-          <div class="produkt-grid">
-            <!-- Produkt 1 -->
-            <article class="produkt-karte">
-              <div class="produkt-bild rot">
-                <!-- Einheitlicher Platz für das Hersteller-Logo -->
-                <div class="produkt-marke">
-                  <img src="../assets/racecars/tony-kart.png" alt="Tony Kart" />
+          <!-- ===== Unterkategorie: GT-Rennwagen ===== -->
+          <div class="unterkategorie" id="gt">
+            <h2 class="kat-titel">GT-Rennwagen<span>.</span></h2>
+            <div class="produkt-grid">
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/porsche-gt3r-992.jpg" alt="Porsche 911 GT3 R (992)" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/Porsche_Symbol_2.webp" alt="Porsche" />
+                  </div>
                 </div>
-              </div>
-              <div class="produkt-info">
-                <span class="tag">Kart</span>
-                <h3>Tony Kart Racer 401 R</h3>
-                <p>KF2-Kart, 50 ccm, komplett überholt, sofort rennbereit.</p>
-                <div class="produkt-fuss">
-                  <strong class="preis">4.800 €</strong>
-                  <a
-                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Tony%20Kart%20Racer%20401%20R&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Tony%20Kart%20Racer%20401%20R%20(4.800%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                    class="btn btn-sm"
-                    >Bestellen</a
-                  >
+                <div class="produkt-info">
+                  <span class="tag">GT3</span>
+                  <h3>Porsche 911 GT3 R (992)</h3>
+                  <p>
+                    4,2-l-Sechszylinder-Boxer mit 565 PS — Neufahrzeug für den
+                    GT3-Kundensport, direkt ab Werk konfigurierbar.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">511.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Porsche%20911%20GT3%20R%20(992)&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Porsche%20911%20GT3%20R%20(992)%20(511.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <!-- Produkt 2 -->
-            <article class="produkt-karte">
-              <div class="produkt-bild blau">
-                <div class="produkt-marke">
-                  <img src="../assets/racecars/renault.png" alt="Renault" />
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/porsche-992-cup.jpg" alt="Porsche 911 GT3 Cup (992)" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/Porsche_Symbol_2.webp" alt="Porsche" />
+                  </div>
                 </div>
-              </div>
-              <div class="produkt-info">
-                <span class="tag">Formel</span>
-                <h3>Formel Renault 2.0</h3>
-                <p>
-                  210 PS, sequenzielles Getriebe, ideal für den
-                  Formelsport-Einstieg.
-                </p>
-                <div class="produkt-fuss">
-                  <strong class="preis">32.000 €</strong>
-                  <a
-                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Formel%20Renault%202.0&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Formel%20Renault%202.0%20(32.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                    class="btn btn-sm"
-                    >Bestellen</a
-                  >
+                <div class="produkt-info">
+                  <span class="tag">GT3 Cup</span>
+                  <h3>Porsche 911 GT3 Cup (992)</h3>
+                  <p>
+                    510 PS, aus einer Saison Carrera Cup, scheckheftgepflegt
+                    und inkl. großem Ersatzteilpaket.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">189.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Porsche%20911%20GT3%20Cup%20(992)&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Porsche%20911%20GT3%20Cup%20(992)%20(189.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <!-- Produkt 3 -->
-            <article class="produkt-karte">
-              <div class="produkt-bild gruen">
-                <div class="produkt-marke">
-                  <img src="../assets/racecars/bmw.png" alt="BMW" />
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/bmw-m4-gt4.jpg" alt="BMW M4 GT4" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/BMW_White.svg" alt="BMW" />
+                  </div>
                 </div>
-              </div>
-              <div class="produkt-info">
-                <span class="tag">GT4</span>
-                <h3>BMW M3 GT4</h3>
-                <p>
-                  480 PS, FIA-homologiert, wartungsarm und langstreckentauglich.
-                </p>
-                <div class="produkt-fuss">
-                  <strong class="preis">149.000 €</strong>
-                  <a
-                    href="mailto:info@brg-racing.de?subject=Bestellung:%20BMW%20M3%20GT4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20BMW%20M3%20GT4%20(149.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                    class="btn btn-sm"
-                    >Bestellen</a
-                  >
+                <div class="produkt-info">
+                  <span class="tag">GT4</span>
+                  <h3>BMW M4 GT4</h3>
+                  <p>
+                    3,0-l-Biturbo mit bis zu 550 PS, FIA-homologiert,
+                    wartungsarm und langstreckentauglich.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">179.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20BMW%20M4%20GT4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20BMW%20M4%20GT4%20(179.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
+          </div>
 
-            <!-- Produkt 4 -->
-            <article class="produkt-karte">
-              <div class="produkt-bild gelb">
-                <div class="produkt-marke">
-                  <img src="../assets/racecars/porsche.png" alt="Porsche" />
+          <!-- ===== Unterkategorie: Prototypen ===== -->
+          <div class="unterkategorie" id="prototypen">
+            <h2 class="kat-titel">Prototypen<span>.</span></h2>
+            <div class="produkt-grid">
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/duqueine-lmp3.webp" alt="Duqueine D08 LMP3" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/duqueine-logo-28.svg" alt="Duqueine" />
+                  </div>
                 </div>
-              </div>
-              <div class="produkt-info">
-                <span class="tag">GT3 Cup</span>
-                <h3>Porsche 911 GT3 Cup</h3>
-                <p>
-                  510 PS, aus einer Saison Carrera Cup, inkl. Ersatzteilpaket.
-                </p>
-                <div class="produkt-fuss">
-                  <strong class="preis">189.000 €</strong>
-                  <a
-                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Porsche%20911%20GT3%20Cup&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Porsche%20911%20GT3%20Cup%20(189.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                    class="btn btn-sm"
-                    >Bestellen</a
-                  >
+                <div class="produkt-info">
+                  <span class="tag">LMP3</span>
+                  <h3>Duqueine D08 LMP3</h3>
+                  <p>
+                    5,6-l-Nissan-V8 mit 455 PS — LMP3-Prototyp der neuesten
+                    Generation, sofort einsatzbereit.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">268.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Duqueine%20D08%20LMP3&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Duqueine%20D08%20LMP3%20(268.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <!-- Produkt 5 -->
-            <article class="produkt-karte">
-              <div class="produkt-bild orange">
-                <div class="produkt-marke">
-                  <img src="../assets/racecars/caterham.png" alt="Caterham" />
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/ligier-jsp320.jpg" alt="Ligier JS P320 in Sichtcarbon" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/Ligier_Automotive_White.svg" alt="Ligier" />
+                  </div>
                 </div>
-              </div>
-              <div class="produkt-info">
-                <span class="tag">Trackday</span>
-                <h3>Caterham Seven 360</h3>
-                <p>
-                  180 PS bei nur 560 kg — kompromissloser Fahrspaß für die
-                  Strecke.
-                </p>
-                <div class="produkt-fuss">
-                  <strong class="preis">42.000 €</strong>
-                  <a
-                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Caterham%20Seven%20360&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Caterham%20Seven%20360%20(42.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                    class="btn btn-sm"
-                    >Bestellen</a
-                  >
+                <div class="produkt-info">
+                  <span class="tag">LMP3</span>
+                  <h3>Ligier JS P320</h3>
+                  <p>
+                    455 PS — das Sieger-Chassis aus ELMS und Le Mans Cup, hier
+                    in edler Sichtcarbon-Ausführung.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">259.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Ligier%20JS%20P320&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Ligier%20JS%20P320%20(259.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <!-- Produkt 6 -->
-            <article class="produkt-karte">
-              <div class="produkt-bild grau">
-                <div class="produkt-marke">
-                  <img src="../assets/racecars/ligier.png" alt="Ligier" />
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/ligier-jsp217.jpg" alt="Ligier JS P217 LMP2" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/Ligier_Automotive_White.svg" alt="Ligier" />
+                  </div>
                 </div>
-              </div>
-              <div class="produkt-info">
-                <span class="tag">Formel 4</span>
-                <h3>Ligier JS F4</h3>
-                <p>
-                  160 PS, Monocoque-Chassis, perfekt für den
-                  Nachwuchs-Motorsport.
-                </p>
-                <div class="produkt-fuss">
-                  <strong class="preis">55.000 €</strong>
-                  <a
-                    href="mailto:info@brg-racing.de?subject=Bestellung:%20Ligier%20JS%20F4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Ligier%20JS%20F4%20(55.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
-                    class="btn btn-sm"
-                    >Bestellen</a
-                  >
+                <div class="produkt-info">
+                  <span class="tag">LMP2</span>
+                  <h3>Ligier JS P217</h3>
+                  <p>
+                    4,2-l-Gibson-V8 mit 600 PS, gebraucht aus der European Le
+                    Mans Series, frisch revidiert.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">498.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Ligier%20JS%20P217&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Ligier%20JS%20P217%20(498.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
+          </div>
+
+          <!-- ===== Unterkategorie: Formel ===== -->
+          <div class="unterkategorie" id="formel">
+            <h2 class="kat-titel">Formel<span>.</span></h2>
+            <div class="produkt-grid">
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/ligier-jsf4.jpg" alt="Ligier JS F4 Formelwagen" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/Ligier_Automotive_White.svg" alt="Ligier" />
+                  </div>
+                </div>
+                <div class="produkt-info">
+                  <span class="tag">Formel 4</span>
+                  <h3>Ligier JS F4</h3>
+                  <p>
+                    160 PS, Monocoque mit Halo — perfekt für den Einstieg in
+                    den Nachwuchs-Formelsport.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">55.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Ligier%20JS%20F4&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Ligier%20JS%20F4%20(55.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/formel-renault.jpg" alt="Formel Renault 2.0" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/Renault_White.svg" alt="Renault" />
+                  </div>
+                </div>
+                <div class="produkt-info">
+                  <span class="tag">Formel</span>
+                  <h3>Formel Renault 2.0</h3>
+                  <p>
+                    210 PS, sequenzielles Getriebe — ideal für den
+                    Formelsport-Einstieg.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">32.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Formel%20Renault%202.0&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Formel%20Renault%202.0%20(32.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ===== Unterkategorie: Trackday & Kart ===== -->
+          <div class="unterkategorie" id="trackday">
+            <h2 class="kat-titel">Trackday &amp; Kart<span>.</span></h2>
+            <div class="produkt-grid">
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/caterham-420-cup.jpg" alt="Caterham Seven 420 Cup" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/Caterham_Logo.svg" alt="Caterham" />
+                  </div>
+                </div>
+                <div class="produkt-info">
+                  <span class="tag">Trackday</span>
+                  <h3>Caterham Seven 420 Cup</h3>
+                  <p>
+                    210 PS bei nur 560 kg — das Wettbewerbsmodell für Trackdays
+                    und die Caterham-Rennserie.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">62.000 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Caterham%20Seven%20420%20Cup&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Caterham%20Seven%20420%20Cup%20(62.000%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="produkt-karte">
+                <div class="produkt-bild">
+                  <img src="../assets/racecars/tony-kart-viper.jpg" alt="Tony Kart Viper" class="produkt-img" />
+                  <div class="produkt-marke">
+                    <img src="../assets/racecars/TonyKart_Wordmark.svg" alt="Tony Kart" />
+                  </div>
+                </div>
+                <div class="produkt-info">
+                  <span class="tag">Kart</span>
+                  <h3>Tony Kart Viper</h3>
+                  <p>
+                    Robustes Kart mit 270-ccm-Viertaktmotor — perfekt für
+                    Kartbahn, Events und Einsteigertraining.
+                  </p>
+                  <div class="produkt-fuss">
+                    <strong class="preis">3.900 €</strong>
+                    <a href="mailto:info@brg-racing.de?subject=Bestellung:%20Tony%20Kart%20Viper&body=Guten%20Tag,%0D%0A%0D%0Aich%20m%C3%B6chte%20folgendes%20Produkt%20bestellen:%0D%0A-%20Tony%20Kart%20Viper%20(3.900%20%E2%82%AC)%0D%0A%0D%0AName:%0D%0AAdresse:%0D%0ATelefon:%0D%0A"
+                      class="btn btn-sm">Bestellen</a>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
